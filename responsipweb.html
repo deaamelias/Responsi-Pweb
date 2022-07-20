@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Rumah Makan Padang</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<center>
+		<h1>&#127803;Rumah Makan Padang&#127803;</h1><br>
+		<center><img src="rmpd.png" width="300px" style="border-radius: 30px; border: 3px solid brown; padding: 5px;"></center>
+</center><br>
+<div class="bio"><strong><font size="6">Pesan Makanan</font></strong><br><br>
+	<form name="form1" method="post" action="pengunjung.php" >
+		<table width="58%" border="0" align="center">
+			<tr>
+				<td>Nama </td>
+				<td><input name="nama" type="text" id="nama" autocomplete="off"></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td><input name="alamat" type="text" id="alamat" autocomplete="off"></td>
+			</tr>
+			<tr>
+				<td>No. Telp</td>
+				<td><input name="telp" type="text" id="telp" autocomplete="off"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="Submit" value="Kirim" onclick="validasi()"><input type="reset" name="Submit2" value="Batal"></td>
+			</tr>
+		</table></form></div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var alamat = document.getElementById("alamat").value;
+		var telp = document.getElementById("telp").value;
+		if (nama != "" && alamat != "" && telp != "") {
+			return true;
+		}
+		else{
+			alert('Mohon untuk mengisi data dengan lengkap');
+		}
+	}
+</script>
+</html>

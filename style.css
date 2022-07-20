@@ -1,0 +1,76 @@
+h1{
+	text-align: center;
+	color: black;
+ 	text-shadow: -1px 0 black, 0 1px darkorchid, 1px 0 white, 0 -1px white; 
+	font-size: 40px;
+	border-bottom: double;
+}
+
+h2{
+	color: black;
+	text-shadow: -1px 0 black, 0 1px darkorchid, 1px 0 white, 0 -1px white;
+	font-size: 30px; 
+}
+
+body{
+	font-family: 'Times New Roman', serif;
+	background: url(b5.jpg);
+	background-size: 100%;
+}
+
+.bio{
+	text-align: center;
+  background-color: lightgray; 
+  margin: 20px auto; 
+  padding: 15px; 
+  width: 500px; 
+  border-radius: 50px;
+}
+
+div.gallery {
+	align-content: center;
+  margin: 30px;
+  border: 1px solid black;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid purple;
+}
+
+div.gallery img {
+  width: 100%;
+  width: 350px;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+.tombol{
+	background: #3498db;
+	color: #fff;
+	border: 0;
+	padding: 5px 8px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
